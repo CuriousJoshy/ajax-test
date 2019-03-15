@@ -12,9 +12,11 @@ xhttp.onreadystatechange = function() {
     append(this.readyState + " " + this.satus);
 
     if (this.readyState == 4) {
-        document.write("Response: " + this.responseText);
+        append("Response: " + this.responseText);
     }
 };
+
+append(location.toString());
 
 xhttp.open("GET", "test.txt", true);
 xhttp.send();
