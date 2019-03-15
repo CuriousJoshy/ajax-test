@@ -11,7 +11,7 @@ var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     append(this.readyState + " " + this.satus);
 
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState == 4) {
         document.write("Response: " + this.responseText);
     }
 };
