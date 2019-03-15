@@ -9,9 +9,9 @@ function append(text)
 var xhttp = new XMLHttpRequest();
 
 xhttp.onreadystatechange = function() {
-    append(this.readyState + " " + this.satus);
+    append(this.readyState + " " + this.status);
 
-    if (this.readyState == 4) {
+    if (this.readyState == 4 && this.status == 200) {
         append("Response: " + this.responseText);
     }
 };
