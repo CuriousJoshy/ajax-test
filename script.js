@@ -18,5 +18,5 @@ xhttp.onreadystatechange = function() {
 
 append(location.toString());
 
-xhttp.open("GET", "test.txt", true);
+xhttp.open("GET", "sample.txt", true);
 xhttp.send();
